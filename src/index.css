@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel:wght@300;400;600;700;800&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Yatra+One&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Martel", Georgia, Cambria, serif;
+}
+
+@layer utilities {
+  .font-hindi {
+    font-family: 'Martel', serif;
+  }
+  .font-yatra {
+    font-family: 'Yatra One', cursive;
+  }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(120, 150, 120, 0.4);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(120, 150, 120, 0.6);
+}
+
+/* Print Stylesheet for Authentic Government Letter Layout */
+@media print {
+  body {
+    background-image: none !important;
+    background-color: #ffffff !important;
+    color: #000000 !important;
+  }
+  
+  .no-print {
+    display: none !important;
+  }
+  
+  .print-only {
+    display: block !important;
+  }
+
+  .print-container {
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    background: transparent !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  .print-letter-bg {
+    background: white !important;
+    box-shadow: none !important;
+    border: none !important;
+    padding: 2cm !important;
+  }
+}

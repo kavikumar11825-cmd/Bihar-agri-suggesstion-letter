@@ -1,0 +1,6 @@
+{
+  "name": "Bihar Agri Suggestions Letter",
+  "description": "An elegant, interactive formal suggestion letter to the Agriculture Minister of Bihar by Ravi Kumar, focusing on agricultural modernization, young agri-entrepreneurship, and farmer empowerment.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
